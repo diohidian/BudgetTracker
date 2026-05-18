@@ -1,64 +1,111 @@
 .navbar {
-    background-color: #003153 !important;
+  background-color: #003153 !important;
 }
 
 body {
-    background: #011f38;
+  background: #011f38;
 
-    background: linear-gradient(182deg, rgba(0, 49, 83, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    182deg,
+    rgba(0, 49, 83, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .img-logo {
-    width: 30px;
-    height: 24px;
-    margin-left: 50px;
+  width: 30px;
+  height: 24px;
+  margin-left: 50px;
 }
 
 .btn-register {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .form-group {
-    width: 400px;
-    margin: 50px auto;
-
+  width: 400px;
+  margin: 50px auto;
 }
 
 .card-login {
-    background-color: #003153
+  background-color: #003153;
 }
 
 .text-welcome {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    margin-right: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-right: 50px;
 }
 
-
 .btn {
-    position: relative;
+  position: relative;
 
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    background: none;
-    border: 2px solid #4169e1;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: none;
+  border: 2px solid #4169e1;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .liquid {
-    background: linear-gradient(#4169e1 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
-    transition: 0.3s var(--t, 0s),
-        background-position 0.3s calc(0.3s - var(--t, 0s));
+  background: linear-gradient(#4169e1 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition:
+    0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
 }
 
 .liquid:hover {
-    --p: 100%;
-    --t: 0.3s;
-    color: #fff;
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+}
+
+.cl-text-save {
+  color: #fff;
+}
+
+.transaksi-list {
+  max-height: 300px; /* batas tinggi */
+  overflow-y: auto; /* scroll vertical */
+}
+
+.grid-overview {
+  min-height: 100px; /* batas minimal */
+  height: auto; /* biarkan bertambah sesuai isi */
+}
+
+#spendingChart {
+  width: 100%;
+  height: 200px; /* atur tinggi canvas agar card tidak terlihat kosong */
+}
+
+.bg-chart {
+  background: #011f38;
+
+  background: linear-gradient(
+    182deg,
+    rgba(0, 49, 83, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+  position: relative;
+}
+
+
+.btn-float {
+  float: right;
 }

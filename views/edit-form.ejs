@@ -1,0 +1,43 @@
+<div id="editOverlay" class="overlay card animate__animated animate__fadeIn">
+    <div class="popup">
+        <form id="editForm">
+            <h4 class="text-center mb-4 cl-text-save">Edit Transaction</h4>
+            <hr class="cl-text-save">
+            <div class="mb-3 d-flex align-items-center ">
+                <label for="..." class="form-label cl-text-save" style="min-width: 120px;">Amount</label>
+                <input type="number" class="form-control" id="amount" name="amount" aria-describedby="..."
+                    placeholder="Enter amount" required>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+                <label for="exampleInputPassword1" class="form-label cl-text-save"
+                    style="min-width: 120px;">Category</label>
+                <select type="text" class="form-select" id="category" name="category" required>
+                    <option value="">Select</option>
+                    <option value="Food and Dining">Food and Dining</option>
+                    <option value="Salary">Salary</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                </select>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+                <label for="type" class="form-label cl-text-save" style="min-width: 120px;">Type</label>
+                <select type="type" class="form-select" id="type" name="type" required>
+                    <option value="">Select</option>
+                    <option value="Expense">Expenses</option>
+                    <option value="Income">Income</option>
+                </select>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+                <label for="datepicker" class="form-label cl-text-save" style="min-width: 120px;">Date</label>
+                <input type="date" class="form-control" id="datepicker" placeholder="Select date" name="date" required>
+            </div>
+
+            <!-- update button -->
+            <button type="submit" id="updateBtn" class="btn btn-primary btn-edit-transaction" >Update</button>
+
+
+            <!-- close overlay -->
+            <button type="button" class=" btn btn-primary btn-delete liquid" id="closeOverlay">Close</button>
+
+            <!-- this button dor delete -->
+            <button id="deleteBtn" class="btn btn-danger btn-delete-id">Delete</button>

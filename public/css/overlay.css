@@ -1,0 +1,19 @@
+.overlay {
+  display: none; /* default hidden */
+  position: fixed; /* kunci: bikin overlay menempel ke layar */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi transparan */
+  z-index: 9999; /* pastikan di atas elemen lain */
+}
+
+.popup {
+  background-color: #003153;
+  padding: 20px;
+  width: 500px;
+  margin: 100px auto; /* auto center horizontal */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
