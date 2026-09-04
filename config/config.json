@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "budgettracker",
+    "username": "postgres",
     "password": "root",
     "database": "budgettracker",
     "host": "127.0.0.1",
